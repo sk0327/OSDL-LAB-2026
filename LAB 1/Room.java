@@ -1,5 +1,3 @@
-
-
 public class Room {
     int rno;
     double tarr;
