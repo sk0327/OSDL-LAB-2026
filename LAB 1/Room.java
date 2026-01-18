@@ -17,9 +17,8 @@ public class Room {
 
     public static void main(String[] args) {
 
-        //Room r1 = new Room(103, 2000);
-        StandardRoom r2 = new StandardRoom(509, 4000);
-        LuxuryRoom r3 = new LuxuryRoom(805, 10000);
+        Room r2;
+        r2 = new StandardRoom(509, 4000);
         int days = 3;
         System.out.println("----TARRIFS----");
 
@@ -28,8 +27,11 @@ public class Room {
     
         System.out.println("Standard Roomr Room: Rs" + r2.calculateTarrif(3));
 
+
+        r2 = new LuxuryRoom(805, 10000);
+
     
-        System.out.println("Luxury Room: Rs" + r3.calculateTarrif(3));
+        System.out.println("Luxury Room: Rs" + r2.calculateTarrif(3));
 
     
 }
